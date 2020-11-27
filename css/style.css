@@ -11,6 +11,6 @@ body, html {
     grid-template-rows: 100vh 100vh 100vh;
 }
 
-section:nth-child(odd) {
+.index-grid *:nth-child(odd) {
     background-color: lightgray;
 }
