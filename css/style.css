@@ -8,9 +8,17 @@ body, html {
 }
 
 .index-grid {
-    grid-template-rows: 100vh 100vh 100vh;
+    grid-template-rows: 48px repeat(3, calc(100vh - 48px));
 }
 
 .index-grid *:nth-child(odd) {
-    background-color: lightgray;
+    background-color: black;
+}
+
+nav#navbar {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px #0005;
+    backdrop-filter: blur(35px);
+    background-color: #fff5;
 }
