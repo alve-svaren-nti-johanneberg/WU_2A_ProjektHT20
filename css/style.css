@@ -2,6 +2,7 @@ body,
 html {
     margin: 0;
     width: 100%;
+    background-color: #E2E0E1;
     font-family: 'ABeeZee', sans-serif;
 }
 
@@ -10,7 +11,11 @@ html {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 1.75vw;
 }
 
 .grid-body {
@@ -25,6 +30,8 @@ header#start-screen {
     padding-top: 15px;
     background-image: url("../img/house_cropped.jpg");
     background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
