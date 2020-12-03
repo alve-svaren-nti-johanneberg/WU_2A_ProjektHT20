@@ -22,8 +22,9 @@ h1 {
 }
 
 header#start-screen {
-    background-image: url("../img/house.jpg");
-    background-position: center -400px;
+    padding-top: 15px;
+    background-image: url("../img/house_cropped.jpg");
+    background-position: center top;
     text-align: center;
 }
 
