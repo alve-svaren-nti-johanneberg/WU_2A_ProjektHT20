@@ -4,6 +4,7 @@ html {
     width: 100%;
     background-color: #E2E0E1;
     font-family: 'ABeeZee', sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -11,11 +12,11 @@ html {
 }
 
 h1 {
-    font-size: 2.5vw;
+    font-size: 5.5vh;
 }
 
 h2 {
-    font-size: 1.75vw;
+    font-size: 2.75vh;
 }
 
 .grid-body {
@@ -27,12 +28,26 @@ h2 {
 }
 
 header#start-screen {
-    padding-top: 15px;
+    padding-top: 1vh;
     background-image: url("../img/house_cropped.jpg");
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200vh;
     text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+    header#start-screen {
+        background-size: 200vw;
+    }
+
+    h1 {
+        font-size: 5.5vw;
+    }
+
+    h2 {
+        font-size: 2.75vw;
+    }
 }
 
 nav#navbar {
@@ -40,6 +55,7 @@ nav#navbar {
     top: 0;
     box-shadow: 0px 0px 5px #0005;
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(15px);
     background-color: #fffa;
 }
 
