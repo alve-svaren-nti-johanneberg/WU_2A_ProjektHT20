@@ -2,6 +2,15 @@ body,
 html {
     margin: 0;
     width: 100%;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 .grid-body {
@@ -12,24 +21,24 @@ html {
     grid-template-rows: 48px repeat(3, calc(100vh - 48px));
 }
 
-/* 
-.index-grid *:nth-child(odd) {
-    background-color: black;
-} */
+header#start-screen {
+    background-image: url("../img/house.jpg");
+    background-position: center -400px;
+    text-align: center;
+}
 
 nav#navbar {
     position: sticky;
     top: 0;
     box-shadow: 0px 0px 5px #0005;
-    backdrop-filter: blur(35px);
-    background-color: #fff5;
-    font-family: 'ABeeZee', sans-serif;
+    backdrop-filter: blur(25px);
+    background-color: #fffa;
 }
 
 nav#navbar ul {
     display: flex;
     width: 100%;
-    gap: 20px;
+    /* gap: 20px; */
     height: 100%;
     margin: 0;
     padding: 0;
@@ -37,13 +46,30 @@ nav#navbar ul {
 }
 
 nav#navbar a {
+    padding: 0 10px;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    gap: 0;
     text-decoration: none;
     color: black;
     font-size: larger;
+}
+
+#logo-container p {
+    margin-left: -5px;
+}
+
+#logo-container {
+    padding: 0;
+    margin-left: -12px;
+}
+
+nav#navbar a:hover {
+    opacity: .50;
+    transition-duration: 200ms;
 }
 
 nav#navbar li {
@@ -51,10 +77,6 @@ nav#navbar li {
     height: 100%;
     width: min-content;
     align-self: center;
-}
-
-nav#navbar li#logo-container a {
-    width: 48px;
 }
 
 li#logo-container img {
