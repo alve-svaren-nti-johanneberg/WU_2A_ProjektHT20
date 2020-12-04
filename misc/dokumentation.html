@@ -103,7 +103,29 @@
     </ul>
 
     <h3>Lektioner vecka 49</h3>
-    <!-- Fyll på med dokumentation här. -->
+    <p>Jag hade lite olika små problem med att få bakgrunden att fungera med olika skärmupplösningar</p>
+    <p>Genom att använda media queries så lyckades jag lösa problemet med att den visades fel.</p>
+    <pre><code>h1 {
+    font-size: 5.5vh;
+}
+
+h2 {
+    font-size: 2.75vh;
+}
+
+@media screen and (max-width: 940px) {
+    header#start-screen {
+        background-size: 200vw;
+    }
+
+    h1 {
+        font-size: 5.5vw;
+    }
+
+    h2 {
+        font-size: 2.75vw;
+    }
+}</code></pre>
 
     <h3>Lektioner vecka 50</h3>
     <!-- Fyll på med dokumentation här. -->
