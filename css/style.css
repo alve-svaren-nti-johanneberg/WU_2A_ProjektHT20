@@ -69,6 +69,12 @@ nav#navbar ul {
     align-items: center;
 }
 
+
+li#logo-container img {
+    height: 75%;
+    width: 48px;
+}
+
 nav#navbar a {
     padding: 0 10px;
     height: 100%;
@@ -79,11 +85,12 @@ nav#navbar a {
     gap: 0;
     text-decoration: none;
     color: black;
+
     font-size: larger;
 }
 
 #logo-container p {
-    margin-left: -5px;
+    margin-left: 5;
 }
 
 #logo-container {
@@ -101,8 +108,5 @@ nav#navbar li {
     height: 100%;
     width: min-content;
     align-self: center;
-}
-
-li#logo-container img {
-    height: 100%;
+    
 }
