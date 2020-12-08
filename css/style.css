@@ -103,6 +103,11 @@ footer#contact-screen {
     gap: 20px;
 }
 
+footer#contact-screen p {
+    margin: 0;
+    flex: 1;
+}
+
 nav#navbar {
     height: 48px;
     position: sticky;
