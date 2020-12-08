@@ -106,10 +106,6 @@ section#card-screen article {
 footer#contact-screen {
     background-color: #333;
     color: #dadada;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    gap: 60px;
 }
 
 footer#contact-screen p {
@@ -118,8 +114,12 @@ footer#contact-screen p {
 }
 
 footer#contact-screen>div {
+    padding: 60px;
+    display: flex;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
+    gap: 20px;
 }
 
 nav#navbar {
