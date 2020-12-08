@@ -99,8 +99,9 @@ footer#contact-screen {
     background-color: #333;
     color: #dadada;
     display: flex;
-    padding: 40px;
-    gap: 20px;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
 }
 
 footer#contact-screen p {
