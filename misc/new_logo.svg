@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="76.985mm" height="82.154mm" version="1.1" viewBox="0 0 76.985 82.154" xmlns="http://www.w3.org/2000/svg">
-   <g transform="translate(6.848 -3.3261)">
-      <g transform="translate(-61.195 -73.062)">
-         <path d="m60.815 157.41-5.3361-71.022 11.963-8.8671 20.07 3.1326-20.865 8.0055 2.9826 57.037 50.534-4.47-40.842-4.6905v-42.487l38.541-13.427 7.3476 1.6188 4.9893 65.107z" fill="#f93a36" stroke="#f93a36" stroke-linejoin="round" stroke-miterlimit="20.1" stroke-width="2.265" />
-         <circle cx="90.211" cy="115.52" r="4.2991" fill="#fff" />
-      </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 82.2">
+   <g transform="translate(-54.3 -76.4)">
+      <path fill="#f93a36" stroke="#f93a36" stroke-linejoin="round" stroke-miterlimit="20.1" stroke-width="2.3" d="M60.8 157.4l-5.3-71 12-8.9 20 3.2-20.9 8 3 57 50.6-4.5-40.9-4.7V94L118 80.6l7.3 1.6 5 65.1z" />
+      <circle cx="90.2" cy="115.5" r="4.3" fill="#fff" />
    </g>
 </svg>
