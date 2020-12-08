@@ -16,7 +16,12 @@ p {
     margin: 10px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
 }
 
@@ -112,7 +117,7 @@ footer#contact-screen p {
     flex: 1;
 }
 
-footer#contact-screen > div {
+footer#contact-screen>div {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -237,7 +242,7 @@ nav#navbar li {
     right: 0;
 }
 
-#lightbox article > h1 {
+#lightbox article>h1 {
     position: absolute;
     bottom: 10px;
     left: 15px;
