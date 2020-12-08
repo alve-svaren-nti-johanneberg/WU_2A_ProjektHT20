@@ -124,13 +124,31 @@ h2 {
         font-size: 2.75vw;
     }
 }</code></pre>
-        <p>Detta gör att den vid en viss skärmstorlek byter till att börja scalea beroende på skärmbredden och skärmhöjden, så att huset alltid visas mitt på skärmen</p>
-        <img src="house_scaling.gif" alt="Exempel på hur huset skalas">
+        <p>
+            Detta gör att den vid en viss skärmstorlek byter till att börja scalea beroende på skärmbredden och skärmhöjden, så att huset alltid visas mitt på
+            skärmen
+        </p>
+        <img src="house_scaling.gif" alt="Exempel på hur huset skalas" />
 
         <h3>Lektioner vecka 50</h3>
         <!-- Fyll på med dokumentation här. -->
-        Jag lade till det mesta innehållet på index-sidan och använde <a href="https://contrastchecker.com/">contrast checker</a> för att se till att färgerna är tillgängliga.
-        Från början använde jag en kombination av <code>#84848</code> (förgrund) och <code>#333</code> (bakgrund), men eftersom kontrasten är dålig med de färgerna så ändrade jag förgrundsfärgen till <code>#DADADA</code>.
+        <p>
+            Jag lade till det mesta innehållet på index-sidan och använde <a href="https://contrastchecker.com/">contrast checker</a> för att se till att
+            färgerna är tillgängliga. Från början använde jag en kombination av <code>#84848</code> (förgrund) och <code>#333</code> (bakgrund), men eftersom
+            kontrasten är dålig med de färgerna så ändrade jag förgrundsfärgen till <code>#DADADA</code>.
+        </p>
+
+        <p>
+            Jag skapade menu-sidan och grid-layouten på den sidan där den skulle visa bilder på olika "tillgängliga maträtter", men jag hade problem med att
+            kontrasten mellan texten som skulle stå på bilderna och själva bilderna blev för låg. Detta gjorde det ganska svårt att läsa och såg inte så bra ut.
+        </p>
+        <img src="dokumentation_imgs/before_accessibility.png" alt="Före-bild på griden" />
+        <p>
+            För att lösa detta så lade jag till en textskugga bakom texten. Detta gjorde texten enkel att läsa men gav lite väl mycket kontrast. Därför valde
+            jag att också lägga till en <code>linear-gradient()</code> över bakgrundsbilden och därmed göra så att bilden är något mörkare längre ner
+        </p>
+        <img src="dokumentation_imgs/after_accessibility.png" alt="Före-bild på griden" />
+        <p>Detta hjälpte väldigt mycket med läsligheten och utseendet på menyn.</p>
         <h2>4. Testning</h2>
         <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
