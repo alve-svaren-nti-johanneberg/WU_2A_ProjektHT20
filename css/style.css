@@ -36,7 +36,7 @@ header#start-screen h2 {
 }
 
 .index-grid {
-    grid-template-rows: auto calc(100vh - 48px) auto 300px;
+    grid-template-rows: auto calc(100vh - 48px) auto auto;
 }
 
 header#start-screen {
