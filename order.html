@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet" />
         <link rel="icon" href="misc/new_logo.svg" />
     </head>
-    <body>
+    <body id="order-body">
         <nav id="navbar">
             <ul>
                 <li id="logo-container">
@@ -24,11 +24,17 @@
             </ul>
         </nav>
         <section id="order-page">
-            <form>
-                <label><input type="checkbox" name="" id="" />sak</label>
-                <input type="email" />
-                <input type="text" />
-                <input type="submit" value="Order" />
+            <form id="order-form">
+                <div id="content">randomskit</div>
+                <input id="email" type="email" placeholder="Email" />
+                <input id="address" type="text" placeholder="Address" />
+                <input id="first-name" type="text" placeholder="First name" />
+                <input id="last-name" type="text" placeholder="Last name" />
+                <input id="card-number" type="text" placeholder="Card number" />
+                <input id="expiry-date" type="number" placeholder="09 / 25" />
+                <input id="cvv" type="number" placeholder="CVV" />
+                <textarea id="comment" name="comment" placeholder="Comment (optional)" id="comment-box" rows="5"></textarea>
+                <input id="submit" type="submit" value="Place order" />
             </form>
         </section>
     </body>

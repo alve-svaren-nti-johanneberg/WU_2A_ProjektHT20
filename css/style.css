@@ -253,3 +253,61 @@ nav#navbar li {
     text-align: left;
     text-shadow: 2px 2px 4px black;
 }
+
+/* ORDER PAGE --------------------------------------- */
+
+#order-form {
+    display: grid;
+    max-width: 940px;
+    grid-template-columns: 4fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    grid-template-areas: 
+        "co em em em"
+        "co ad ad ad"
+        "co fn ln ln"
+        "co cn ex cv"
+        "co cm cm cm"
+        "co .. .. or";
+}
+
+#order-form #content {
+    grid-area: co;
+}
+
+#order-form #email {
+    grid-area: em;
+}
+
+#order-form #address {
+    grid-area: ad;
+}
+
+#order-form #first-name {
+    grid-area: fn;
+}
+
+#order-form #last-name {
+    grid-area: ln;
+}
+
+#order-form #card-number {
+    grid-area: cn;
+}
+
+#order-form #expiry-date {
+    grid-area: ex;
+}
+
+#order-form #cvv {
+    grid-area: cv;
+}
+
+#order-form #comment {
+    grid-area: cm;
+}
+
+#order-form #submit {
+    grid-area: or;
+}
