@@ -272,6 +272,10 @@ nav#navbar li {
         "co .. .. or";
 }
 
+#order-form * {
+    width: 100%;
+}
+
 #order-form #content {
     grid-area: co;
 }
