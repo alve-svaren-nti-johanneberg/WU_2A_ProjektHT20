@@ -160,17 +160,22 @@ h2 {
         <img src="dokumentation_imgs/after_accessibility.png" alt="Före-bild på griden" />
         <p>Detta hjälpte väldigt mycket med läsligheten och utseendet på menyn.</p>
 
-
         <h3>Lektioner vecka 51</h3>
         <p>Jag gjorde färdig min order-sida och fixade massa små problem överallt på hemsidan, mestadels med cssen</p>
-        <p>Ett problem jag upptäckt var med att nav-baren använde sig av <code>position: sticky;</code> vilket orsakade att den slutade följa med längst upp på sidan när man scrollade förbi den första skärmen i höjd på sidan. Detta ledde till att jag bytte ut den mot <code>position: fixed;</code> istället. Däremot orsakade detta några andra problem</p>
-        <p>Det största problemet var att resten av sidan var beroende på att nav-baren tog upp plats på hemsidan. Detta löste jag genom att lägga till en <code>div</code> vid början i htmlen för varje sida.</p>
+        <p>
+            Ett problem jag upptäckt var med att nav-baren använde sig av <code>position: sticky;</code> vilket orsakade att den slutade följa med längst upp på
+            sidan när man scrollade förbi den första skärmen i höjd på sidan. Detta ledde till att jag bytte ut den mot <code>position: fixed;</code> istället.
+            Däremot orsakade detta några andra problem
+        </p>
+        <p>
+            Det största problemet var att resten av sidan var beroende på att nav-baren tog upp plats på hemsidan. Detta löste jag genom att lägga till en
+            <code>div</code> vid början i htmlen för varje sida.
+        </p>
 
         <h2>4. Testning</h2>
         <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
-        <p>Jag testade hemsidan på följande enheter/webbläsare:
-        </p>
+        <p>Jag testade hemsidan på följande enheter/webbläsare:</p>
         <ul>
             <li>Firefox på linux (min vanliga webbläsare)</li>
             <li>Chromium på linux</li>
@@ -184,7 +189,8 @@ h2 {
             Det största var att order-sidan knappt fungerade på min telefon, då den inte flyttade runt innehållet när skärmen blev mindre.
         </p>
         <p>
-            Jag löste detta genom att lägga till en media query som ändrade <code>grid-template-areas</code> och <code>grid-template-columns/rows</code> när skärmen blev en viss storlek vilket fungerade väldigt bra.
+            Jag löste detta genom att lägga till en media query som ändrade <code>grid-template-areas</code> och <code>grid-template-columns/rows</code> när
+            skärmen blev en viss storlek vilket fungerade väldigt bra.
         </p>
 
         Jag använde också contrastchecker.com för att kontrollera så att färgerna har tillräckligt hög kontrast för att läsas.
@@ -196,7 +202,13 @@ h2 {
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
 
-    <p>Jag tycker att största delen av projektet gick ganska bra. Då jag hållt på med hemsidor och css ganska mycket innan så tyckte jag det mesta var ganska enkelt. </p><p>
-    Däremot, som vanligt när man programmerar eller håller på med webbutveckling har jag stött på några problem. Det största som tog längst tid att lösa var att bakgrundsbilden inte fungerade som jag ville att den skulle göra. Jag lyckades däremot lösa det ganska snabbt</p>
+        <p>
+            Jag tycker att största delen av projektet gick ganska bra. Då jag hållt på med hemsidor och css ganska mycket innan så tyckte jag det mesta var
+            ganska enkelt.
+        </p>
+        <p>
+            Däremot, som vanligt när man programmerar eller håller på med webbutveckling har jag stött på några problem. Det största som tog längst tid att lösa
+            var att bakgrundsbilden inte fungerade som jag ville att den skulle göra. Jag lyckades däremot lösa det ganska snabbt
+        </p>
     </body>
 </html>
