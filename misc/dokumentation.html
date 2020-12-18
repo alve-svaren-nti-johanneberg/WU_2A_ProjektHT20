@@ -191,10 +191,35 @@ h2 {
             Jag löste detta genom att lägga till en media query som ändrade <code>grid-template-areas</code> och <code>grid-template-columns/rows</code> när
             skärmen blev en viss storlek vilket fungerade väldigt bra.
         </p>
+        <p>Tyvärr glömde jag ta screenshots innan jag fixade problemen, så screenshotsen är från efter jag fixade den, så dessa problemen går inte att se i bilderna.</p>
+        <button class="spoiler-toggle">Klicka för att växla visa screenshots</button>
+        <div class="spoiler">
+            <img src="dokumentation_imgs/testing/windows_firefox_index.png" alt="windows_firefox_index" />
+            <img src="dokumentation_imgs/testing/windows_firefox_menu.png" alt="windows_firefox_menu" />
+            <img src="dokumentation_imgs/testing/windows_firefox_order.png" alt="windows_firefox_order" />
+            <img src="dokumentation_imgs/testing/ios_brave_order.png" alt="ios_brave_order" />
+            <img src="dokumentation_imgs/testing/ios_brave_menu.png" alt="ios_brave_menu" />
+            <img src="dokumentation_imgs/testing/ios_brave_index_down.png" alt="ios_brave_index_down" />
+            <img src="dokumentation_imgs/testing/ios_brave_index_mid.png" alt="ios_brave_index_mid" />
+            <img src="dokumentation_imgs/testing/ios_brave_index_up.png" alt="ios_brave_index_up" />
+            <img src="dokumentation_imgs/testing/ios_safari_order.png" alt="ios_safari_order" />
+            <img src="dokumentation_imgs/testing/ios_safari_menu.png" alt="ios_safari_menu" />
+            <img src="dokumentation_imgs/testing/ios_safari_index_down.png" alt="ios_safari_index_down" />
+            <img src="dokumentation_imgs/testing/ios_safari_index_up.png" alt="ios_safari_index_up" />
+            <img src="dokumentation_imgs/testing/linux_firefox_index.jpg" alt="linux_firefox_index" />
+            <img src="dokumentation_imgs/testing/linux_chromium_menu.png" alt="linux_chromium_menu" />
+            <img src="dokumentation_imgs/testing/linux_firefox_order.png" alt="linux_firefox_order" />
+            <img src="dokumentation_imgs/testing/linux_firefox_menu.png" alt="linux_firefox_menu" />
+            <img src="dokumentation_imgs/testing/linux_chromium_up.png" alt="linux_chromium_up" />
+            <img src="dokumentation_imgs/testing/linux_chromium_order.png" alt="linux_chromium_order" />
+            <img src="dokumentation_imgs/testing/linux_chromium_index_down.png" alt="linux_chromium_index_down" />
+        </div>
 
-        Jag använde också contrastchecker.com för att kontrollera så att färgerna har tillräckligt hög kontrast för att läsas.
-        <br />
-        <a href="#contrastchecker-docs">Länk till dokumentation om <code>contrastchecker.com</code></a
+        <p>
+            Jag använde också contrastchecker.com för att kontrollera så att färgerna har tillräckligt hög kontrast för att läsas.<br />
+            <a href="#contrastchecker-docs">Länk till dokumentation om <code>contrastchecker.com</code></a>
+        </p>
+
         ><br />
 
         <p>Jag använde även W3s validators för html och css:</p>
@@ -250,5 +275,17 @@ h2 {
             eftersom det tar ganska mycket tid (speciellt med att komma på hur man ska få den att kännas som om den ska vara där) så valde jag att inte göra
             den.
         </p>
+        <script>
+            "use strict";
+
+            function toggle(i) {
+                document.querySelectorAll(".spoiler")[i].classList.toggle("visible");
+            }
+
+            const spoilerButtons = document.querySelectorAll(".spoiler-toggle");
+            for (const i = 0; i < spoilerButtons.length; i++) {
+                spoilerButtons[i].addEventListener("click", (() => toggle(i)).bind(i));
+            }
+        </script>
     </body>
 </html>

@@ -42,6 +42,14 @@ body {
     }
 }
 
+.spoiler {
+    display: none;
+}
+
+.spoiler.visible {
+    display: block;
+}
+
 .markdown-body .octicon {
     display: inline-block;
     fill: currentColor;
