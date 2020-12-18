@@ -307,7 +307,7 @@ nav#navbar li {
         "co fn ln ln"
         "co cn ex cv"
         "co cm cm cm"
-        "co .. .. or";
+        "co pr pr or";
 }
 
 @media screen and (max-width: 700px) {
@@ -321,7 +321,7 @@ nav#navbar li {
             "fn ln ln"
             "cn ex cv"
             "cm cm cm"
-            ".. .. or";
+            "pr pr or";
     }
 }
 
@@ -413,6 +413,10 @@ nav#navbar li {
 #order-form #comment {
     grid-area: cm;
     resize: none;
+}
+
+#order-form #price {
+    grid-area: pr;
 }
 
 #order-form #submit {
