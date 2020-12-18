@@ -29,7 +29,8 @@ h1 {
     font-size: 2em;
 }
 
-input,textarea {
+input,
+textarea {
     color: black;
     background-color: #fffa;
     border: 1px solid #000d;
@@ -284,6 +285,21 @@ nav#navbar li {
         "co .. .. or";
 }
 
+@media screen and (max-width: 700px) {
+    #order-form {
+        grid-template-columns: 3fr 2fr 1fr;
+        grid-template-rows: 10fr 1fr 1fr 1fr 1fr 3fr 1fr;
+        grid-template-areas:
+            "co co co"
+            "em em em"
+            "ad ad ad"
+            "fn ln ln"
+            "cn ex cv"
+            "cm cm cm"
+            ".. .. or";
+    }
+}
+
 #order-form>* {
     width: 100%;
 }
@@ -376,19 +392,4 @@ nav#navbar li {
 
 #order-form #submit {
     grid-area: or;
-}
-
-@media screen and (max-width: 700px) {
-    #order-form {
-        grid-template-columns: 3fr 2fr 1fr;
-        grid-template-rows: 10fr 1fr 1fr 1fr 1fr 3fr 1fr;
-        grid-template-areas:
-            "co co co"
-            "em em em"
-            "ad ad ad"
-            "fn ln ln"
-            "cn ex cv"
-            "cm cm cm"
-            ".. .. or";
-    }
 }
