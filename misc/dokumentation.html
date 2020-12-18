@@ -207,13 +207,21 @@ h2 {
                 <a href="https://jigsaw.w3.org/css-validator" target="_blank" rel="noopener noreferrer">CSS Validator from W3</a>
             </li>
         </ul>
-        <p>Med hjälp av dessa hittade jag följande fel i htmlen:
-            Jag hade inte alltid h2-taggar som sub-headings istället för h1, jag hade råkat sätta <code>id</code>-attributen två gånger på comment-boxen på Order-sidan, jag hade fel language tags på några av sidorna.
+        <p>
+            Med hjälp av dessa hittade jag följande fel i htmlen: Jag hade inte alltid h2-taggar som sub-headings istället för h1, jag hade råkat sätta
+            <code>id</code>-attributen två gånger på comment-boxen på Order-sidan, jag hade fel language tags på några av sidorna.
         </p>
 
         <p>Alla dessa gick enkelt att fixa och nu är koden semantisk och korrekt!</p>
 
-        
+        <p>
+            Utöver dessa kontrollerade jag även alla sidorna med
+            <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noopener noreferrer">Google Lighthouse</a>.
+            <br />
+            Google Lighthouse kontrollerar massa saker på sidan och ger en "score" för olika kategorier, såsom tillgänglighet, 'best practices',
+            sökmotorsoptimiering och prestanda. Den enda kategorien som inte fick så bra scores var prestandra-scoren. Detta är på grund av att bilderna som jag
+            hade när jag testade är för stora, men jag har nu skalat ner bilderna så det problemet har försvunnit.
+        </p>
 
         <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
         <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
