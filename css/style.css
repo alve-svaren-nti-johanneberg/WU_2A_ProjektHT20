@@ -263,7 +263,8 @@ nav#navbar li {
     grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
     gap: 10px;
     margin: 0 auto;
-    grid-template-areas: 
+    padding: 15px;
+    grid-template-areas:
         "co em em em"
         "co ad ad ad"
         "co fn ln ln"
@@ -272,12 +273,61 @@ nav#navbar li {
         "co .. .. or";
 }
 
-#order-form * {
+#order-form>* {
     width: 100%;
 }
 
+
 #order-form #content {
     grid-area: co;
+}
+
+#order-form #content ul {
+    overflow-y: scroll;
+    height: 352px;
+    padding: 0;
+    margin: 0;
+}
+
+#order-form #content li {
+    position: relative;
+    height: 176px;
+    padding: 4px 0;
+}
+
+#order-form #content li label {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: calc(100% - 8px);
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+}
+
+
+#order-form #content li::after {
+    background: linear-gradient(transparent, transparent, #000a);
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+}
+
+#order-form #content img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#order-form #content input {
+    width: 55px;
 }
 
 #order-form #email {
