@@ -169,6 +169,23 @@ h2 {
         <h2>4. Testning</h2>
         <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
+        <p>Jag testade hemsidan på följande enheter/webbläsare:
+            <ul>
+                <li>Firefox på linux (min vanliga webbläsare)</li>
+                <li>Chromium på linux</li>
+                <li>Brave på min telefon</li>
+                <li>Safari på min telefon</li>
+                <li>Firefox på windows</li>
+                <li>Google Chrome på windows</li>
+            </ul>
+
+            Under min testning så upptäckte jag lite olika problem.<br />
+            Det största var att order-sidan knappt fungerade på min telefon, då den inte flyttade runt innehållet när skärmen blev mindre.
+        </p>
+        <p>
+            Jag löste detta genom att lägga till en media query som ändrade <code>grid-template-areas</code> och <code>grid-template-columns/rows</code> när skärmen blev en viss storlek vilket fungerade väldigt bra.
+        </p>
+
         <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
         <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
