@@ -29,6 +29,16 @@ h1 {
     font-size: 2em;
 }
 
+input,textarea {
+    color: black;
+    background-color: #fffa;
+    border: 1px solid #000d;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* INDEX PAGE --------------------------------------- */
+
 header#start-screen h1 {
     font-size: 5.5vh;
 }
@@ -360,6 +370,7 @@ nav#navbar li {
 
 #order-form #comment {
     grid-area: cm;
+    resize: none;
 }
 
 #order-form #submit {
