@@ -295,7 +295,7 @@ h2 {
             }
 
             const spoilerButtons = document.querySelectorAll(".spoiler-toggle");
-            for (const i = 0; i < spoilerButtons.length; i++) {
+            for (var i = 0; i < spoilerButtons.length; i++) {
                 spoilerButtons[i].addEventListener("click", (() => toggle(i)).bind(i));
             }
         </script>
