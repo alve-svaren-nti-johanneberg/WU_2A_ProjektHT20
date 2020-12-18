@@ -89,6 +89,14 @@ section#card-screen {
     margin: 0 auto;
 }
 
+section#card-screen h2 {
+    font-size: 2em;
+}
+
+section#card-screen h3 {
+    font-size: 24px;
+}
+
 section#card-screen div.card-container {
     display: flex;
     width: 100%;
@@ -275,7 +283,7 @@ nav#navbar li {
     right: 0;
 }
 
-#lightbox article>h1 {
+#lightbox article>h2 {
     position: absolute;
     bottom: 10px;
     left: 15px;
