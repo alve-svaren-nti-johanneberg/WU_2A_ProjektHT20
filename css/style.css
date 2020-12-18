@@ -309,10 +309,10 @@ nav#navbar li {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: calc(100% - 8px);
+    width: calc(100% - 14px);
     position: absolute;
-    bottom: 8px;
-    left: 4px;
+    bottom: 12px;
+    left: 8px;
     z-index: 2;
     text-shadow: 2px 2px 4px black;
     color: white;
