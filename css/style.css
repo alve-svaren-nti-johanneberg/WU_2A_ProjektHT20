@@ -53,7 +53,11 @@ header#start-screen h2 {
 }
 
 .index-grid {
-    grid-template-rows: auto calc(100vh - 48px) auto auto;
+    grid-template-rows: 48px calc(100vh - 48px) auto auto;
+}
+
+.top-placeholder {
+    height: 48px;
 }
 
 header#start-screen {
@@ -135,7 +139,9 @@ footer#contact-screen>div {
 
 nav#navbar {
     height: 48px;
-    position: sticky;
+    position: fixed;
+    left: 0;
+    right: 0;
     top: 0;
     box-shadow: 0px 0px 5px #0005;
     backdrop-filter: blur(25px);
