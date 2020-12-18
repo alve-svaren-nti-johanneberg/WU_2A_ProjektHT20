@@ -93,8 +93,8 @@ section#card-screen div.card-container {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    gap: 16px;
-    padding: 25px;
+    /* gap: 16px; */
+    padding: 9px;
 }
 
 @media screen and (max-width: 940px) {
@@ -116,6 +116,18 @@ section#card-screen article {
     border-radius: 5px;
     padding: 0 10px;
     box-shadow: 2px 2px 2px #0005;
+    margin: 0 8px;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 940px) {
+    section#card-screen article:first-child {
+        margin-left: 0;
+    }
+
+    section#card-screen article:last-child {
+        margin-right: 0;
+    }
 }
 
 footer#contact-screen {
